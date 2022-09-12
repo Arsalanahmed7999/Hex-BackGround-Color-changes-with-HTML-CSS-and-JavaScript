@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEX Bg changer</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;box-sizing: border-box;
+        }
+        .container{
+            height: 720px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+        .box{
+            height: 50vh;
+            width: 40vw;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+        .text, .btn ,.color{
+            margin: 10px 0px;
+            padding: 4px 8px;
+            font-weight: bold;
+        }
+        .btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="box">
+            <h1 class="text">HEX Background Color</h1>
+            <button class="btn">Change</button>
+            <h3 class="color">#FFFFFF</p>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

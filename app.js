@@ -1,0 +1,40 @@
+let btn = document.querySelector('.btn')
+btn.addEventListener('click', ()=>{
+    let colors = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+    let rand1 = Math.floor(Math.random()*colors.length);
+    let rand2 = Math.floor(Math.random()*colors.length);
+    let rand3 = Math.floor(Math.random()*colors.length);
+    let rand4 = Math.floor(Math.random()*colors.length);
+    let rand5 = Math.floor(Math.random()*colors.length);
+    let rand6 = Math.floor(Math.random()*colors.length);
+    let char1 = colors[rand1]
+    let char2 = colors[rand2]
+    let char3 = colors[rand3]
+    let char4 = colors[rand4]
+    let char5 = colors[rand5]
+    let char6 = colors[rand6]
+    let box = document.querySelector('.box');
+    let text = document.querySelector('.color');
+    text.innerHTML = ('#'+char1+char2+char3+char4+char5+char6)
+    box.style.backgroundColor = ('#'+char1+char2+char3+char4+char5+char6)
+})
+
+setInterval(() => {
+    let colors = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
+    let rand1 = Math.floor(Math.random()*colors.length);
+    let rand2 = Math.floor(Math.random()*colors.length);
+    let rand3 = Math.floor(Math.random()*colors.length);
+    let rand4 = Math.floor(Math.random()*colors.length);
+    let rand5 = Math.floor(Math.random()*colors.length);
+    let rand6 = Math.floor(Math.random()*colors.length);
+    let char1 = colors[rand1]
+    let char2 = colors[rand2]
+    let char3 = colors[rand3]
+    let char4 = colors[rand4]
+    let char5 = colors[rand5]
+    let char6 = colors[rand6]
+    let box = document.querySelector('.box');
+    let text = document.querySelector('.color');
+    text.innerHTML = ('#'+char1+char2+char3+char4+char5+char6)
+    box.style.backgroundColor = ('#'+char1+char2+char3+char4+char5+char6)
+}, 3000);
